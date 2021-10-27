@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p> Page content rendering video em several formats </p>
+
+    <div>
+        <h2>Video Rendering Blob</h2>
+        <video id="myvideoblob" height="400" width="600" controls>
+            <source src="https://localhost:44370/RenderingVideo/blob" type="video/mp4" />
+        </video>
+    </div>
+
+    <div>
+        <br />
+        <h2>Video Rendering Mp4</h2>
+        <video id="myvideoblob" height="400" width="600" controls>
+            <source src="https://localhost:44370/RenderingVideo/mp4" type="video/mp4" />
+        </video>
+    </div>
+</div>
